@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url("https://www.greekboston.com/wp-content/uploads/2020/01/golden-age-scaled.jpg");
+      background-size: cover;
+      color: #ffd;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      font-style: italic;
+      font-family: frenchscript;
+    }
+    h2 {
+      text-align: center;
+    }
+    .athena {
+      width: 250px;
+      display: flex;
+      margin: auto;
+    }
+    p {
+      text-align: center;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+       border: 1px solid white;
+      border-radius: 20px;
+      width: 20%;
+      
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.7);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      border-radius: 20px;
+      border: 2px solid red;
+    }
+    button {
+      display: flex;
+      margin: 0 auto; 
+      color: orange;
+      background: rgba (255, 255, 250, 0);
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://alchetron.com/cdn/gorgon-8622c99b-b327-4114-9091-e946672e491-resize-750.jpeg"/>
+    <h1>The Blog About Greek Myths</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Myths</a></li>
+      <li><a href="#">Favorite Gods</a></li>
+    </ul>
+  </header>
+  <section id="About-Me">
+    <h2>Mythology</h2>
+    <p>Hi, I'm <b>Jaelynn</b>. This blog is meant for fun & is all about Greek Myths surrounding the Greek Gods!</p>
+  </section>
+  <section id="myths">
+    <h2>Lets introduce the Gods!</h2>
+    <p>There were 100s of Gods, but we can only speak to the ones that were mentioned in multiple stories unless we decide to do fictional writings about them. Although many Greek myths were "fictional" there was a time that this was believed amoung societies.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eJCm8W5RZes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <button>Like</button>
+    <button>Dislike</button>
+  </section>
+  <section id="favorite-gods">
+    <h2>Who's Athena?</h2>
+    <img class="athena" src="https://cdna.artstation.com/p/assets/images/images/005/953/788/large/anita-chaudhary-myt-athena-light-06.jpg?1494958798" />
+    <p>One of the most popular greek Gods is Athena, born from Zeus & Metis! It is said that Zeus had an affair with Metis, heard that she would have his son (who would soon overthrow him.) Zeus wanted to stop this from happening so he swallowed her. Athena then was born inside & sprung from his head, fully grown & fully suited! She became the Goddess of Widsom & Battle Strategy. She's a fan favorite because she was female who was strong & wise during a time where women were considered property! No wonder she's a fan favorite.</p>
+    
+    <button>Like</button>
+    <button>Dislike</button>
+  </section>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
